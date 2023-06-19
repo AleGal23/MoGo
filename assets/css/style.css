@@ -246,6 +246,7 @@ h6 {
 
 /* About */
 .about {
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -271,7 +272,7 @@ h6 {
 
 .about_img {
   background: linear-gradient(to bottom, #f38181, #fce38a);
-  transition: transform .2s linear;
+  transition: transform 0.2s linear;
 }
 
 .about_img img {
@@ -292,5 +293,38 @@ h6 {
   z-index: 2;
   transform: translate3d(0, -50%, 0);
   opacity: 0;
-  transition: opacity .2s linear;
+  transition: opacity 0.2s linear;
+}
+
+/* Statistics */
+.statistics {
+  background-color: #95e1d3; 
+}
+
+.stat {
+  display: flex;
+}
+
+.stat_item {
+  flex: 1 1 0;
+  padding: 70px 25px;
+  border-left: 1px solid #b5eae0;
+  text-align: center;
+  color: #fff;
+}
+
+.stat_item:last-child {
+  border-right: 1px solid #b5eae0;
+}
+
+.stat_count {
+  margin-bottom: 10px;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.stat_text {
+  font-size: 14px;
+  text-transform: uppercase;
 }
