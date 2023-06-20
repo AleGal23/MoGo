@@ -617,21 +617,19 @@ hr {
   background: linear-gradient(to bottom, #f38181, #fce38a);
 }
 
-.works_item:hover
-.works_image {
+.works_item:hover .works_image {
   opacity: 0.1;
 }
 
-.works_item:hover
-.works_info {
+.works_item:hover .works_info {
   opacity: 1;
 }
 
 .works_image {
-  transition: opacity .2s linear;
+  transition: opacity 0.2s linear;
   display: block;
   max-width: 100%;
-  height: auto ;
+  height: auto;
 }
 
 .works_info {
@@ -816,5 +814,135 @@ hr {
   display: block;
   border: 3px solid #f38181;
   width: 60px;
-  margin: 20px auto 0 ;
+  margin: 20px auto 0;
+}
+
+/* Footer */
+.footer {
+  padding-top: 60px;
+  background-color: #f8f8f8;
+}
+
+.footer_inner {
+  padding-bottom: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_column--first {
+  width: 40%;
+}
+
+.footer_column--second {
+  width: 29%;
+}
+
+.footer_column--third {
+  width: 22%;
+}
+
+.footer_logo {
+  color: #ccc;
+  font-size: 46px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.footer_text {
+  color: #ccc;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.footer_social {
+  margin-bottom: 25px;
+}
+
+.footer_social_header {
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 15px;
+}
+
+.footer_social_header b {
+  font-size: 18px;
+}
+
+.footer_social_content {
+  padding-top: 15px;
+  font-size: 15px;
+  color: #999;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.footer_social_content a {
+  color: #95e1d3;
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.footer_title {
+  text-transform: uppercase;
+  color: #333;
+  font-size: 14px;
+  margin: 30px 0;
+}
+
+/* Subsriribe */
+.subscribe {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+}
+
+.subscribe_input {
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 300;
+  padding: 12px;
+  font-family: "Montserrat", sans-serif;
+  height: 40px;
+  line-height: 1.1;
+  color: #333;
+  width: 60%;
+  border-right: 0;
+}
+
+.subscribe_input::placeholder {
+  color: #ccc;
+}
+
+.subscribe_btn {
+  font-family: "Montserrat", sans-serif;
+  height: 40px;
+  background-color: #95e1d3;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  line-height: 1.1;
+  width: 40%;
+  transition: background 0.2s linear;
+}
+
+.subscribe_input:focus {
+  outline: none;
+  border-color: #95e1d3;
+}
+
+.subscribe_btn:hover {
+  background-color: #74c7b8;
+}
+
+.subscribe_btn:focus {
+  outline: none;
 }
